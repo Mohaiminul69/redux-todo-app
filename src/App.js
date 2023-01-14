@@ -45,7 +45,7 @@ function App() {
               fontSize: 15,
             }}
           >
-            Go
+            Add
           </button>
         </form>
         <ul className="todo-list">
