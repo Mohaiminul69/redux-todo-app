@@ -27,24 +27,9 @@ function App() {
             placeholder="Enter a Task"
             type="text"
             onChange={(e) => setTodo(e.target.value)}
-            style={{
-              width: 250,
-              padding: 10,
-              paddingLeft: 20,
-              borderRadius: 20,
-              border: "none",
-              fontSize: 20,
-            }}
+            className="todoInput"
           />
-          <button
-            type="submit"
-            style={{
-              padding: 12,
-              borderRadius: 25,
-              marginLeft: 20,
-              fontSize: 15,
-            }}
-          >
+          <button type="submit" className="addButton">
             Add
           </button>
         </form>
@@ -55,13 +40,7 @@ function App() {
                 <span className="todoText">{todo.todo}</span>
                 <button
                   onClick={() => dispatch(removeTodo(todo.id))}
-                  style={{
-                    padding: 10,
-                    borderRadius: 15,
-                    border: "1px solid white",
-                    color: "white",
-                    background: "#E0353D",
-                  }}
+                  className="deleteBtn"
                 >
                   Delete
                 </button>
